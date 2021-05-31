@@ -1,5 +1,6 @@
 @import'./component/variable';
 @import './component/master';
+@import './component/hamburger';
 
 
 
@@ -13,19 +14,16 @@
 }
 
 @media screen and(min-width: 768px){ // --breakpoint-md
-
-
-
+    @include md-hamburger();
 }
 
 @media screen and(min-width: 992px){ //  --breakpoint-lg
-
+    @include lg-hamburger();
 
 }
 
 @media screen and(min-width: 1200px){ //  --breakpoint-xl
-
-
+    @include xl-hamburger();
 
 }
 /*======== Media Query End =============*/
