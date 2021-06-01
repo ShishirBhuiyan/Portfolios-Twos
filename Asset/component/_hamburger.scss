@@ -1,6 +1,6 @@
 
 .menu {
-  padding: 1rem .5rem;
+  padding: .8rem .4rem;
   position: fixed;
   top: 3%;
   right: 10%;
@@ -59,7 +59,7 @@
 
 @mixin md-hamburger(){
   .menu {
-    padding: 1.5rem .8rem;
+    padding: 1rem .5rem;
     .line,
     .line:before,
     .line:after{
