@@ -5,29 +5,27 @@
     height: 30px;
     margin-top: 15px;
     width: 100%;
-    background-color: indigo;
+    background-color: #191919;
     position: relative;
     .child{
         position: absolute;
-        top: -35px;
+        top: -40px;
         left: 0;
         right: 0;
         margin: 0 auto;
         height: 120px;
         width: 120px;
-        background-color: indigo;
-        transform: rotate(-45deg);
-        padding: 5px;
-        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("./image/s1.png");
+        border-radius: 50%;
+        border: 5px solid rgb(0, 0, 0);
         .image{
             height: 100%;
             width: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url("./image/s1.png");
             transform: rotate(45deg);
-
+            margin-left: -5px;
         }
     }
 }

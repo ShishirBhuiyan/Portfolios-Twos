@@ -24,7 +24,7 @@
 }
 
 html {
-  --body-bg: rgb(0, 4, 40);
+  --body-bg: rgb(0, 0, 0);
   --section-heading-color: #027cff;
   --section-heading-before-after-color: #4a0000;
   --pop-overlay-bg: url(../image/okk.jpg);
@@ -95,7 +95,7 @@ html {
 }
 
 html[data-theme='light'] {
-  --body-bg: rgb(10, 2, 2);
+  --body-bg: rgb(255, 255, 255);
   --section-heading-color: rgb(0, 0, 0);
   --section-heading-before-after-color: rgb(0, 0, 0);
   --profile-bg: rgba(0, 0, 0, 0) linear-gradient(rgb(0, 4, 40), rgb(0, 78, 146)) repeat scroll 0% 0% !important;
@@ -179,7 +179,6 @@ ul {
 }
 
 section {
-  border: 1px solid greenyellow;
   padding: 3rem;
 }
 
@@ -480,34 +479,32 @@ section .section_heading h1 {
   height: 30px;
   margin-top: 15px;
   width: 100%;
-  background-color: indigo;
+  background-color: #191919;
   position: relative;
 }
 
 #profile .parent .child {
   position: absolute;
-  top: -35px;
+  top: -40px;
   left: 0;
   right: 0;
   margin: 0 auto;
   height: 120px;
   width: 120px;
-  background-color: indigo;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  padding: 5px;
-  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./image/s1.png");
+  border-radius: 50%;
+  border: 5px solid black;
 }
 
 #profile .parent .child .image {
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("./image/s1.png");
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  margin-left: -5px;
 }
 
 /*======== Media Query Start =============*/
