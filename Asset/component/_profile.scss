@@ -1,10 +1,9 @@
 #profile{
     height:37vh;
     width: 100%;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
     position: relative;
     z-index: var(--zindex_none);
+    border: 1px solid red;
     .parent{
     margin-top: 15px;
     position: relative;

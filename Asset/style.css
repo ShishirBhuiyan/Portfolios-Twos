@@ -179,7 +179,7 @@ ul {
 }
 
 section {
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 section .section_heading {
@@ -285,8 +285,8 @@ section .section_heading h1 {
   width: 100%;
   position: fixed;
   top: 0;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
   -webkit-transition: -webkit-transform 650ms;
   transition: -webkit-transform 650ms;
   transition: transform 650ms;
@@ -466,17 +466,16 @@ section .section_heading h1 {
 }
 
 .open {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
 }
 
 #profile {
   height: 37vh;
   width: 100%;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
   position: relative;
   z-index: var(--zindex_none);
+  border: 1px solid red;
 }
 
 #profile .parent {
@@ -558,6 +557,7 @@ section .section_heading h1 {
 span {
   font-weight: normal;
   font-size: 18px;
+  color: #00db6a;
 }
 
 .cd-words-wrapper {
@@ -569,7 +569,7 @@ span {
 .cd-words-wrapper b {
   font-size: 20px;
   font-weight: bold;
-  color: var(--pink);
+  color: var(--white);
   display: inline-block;
   position: absolute;
   white-space: nowrap;
@@ -596,23 +596,46 @@ xclip
   vertical-align: top;
 }
 
-.cd-headline.clip .cd-words-wrapper::after {
-  /* line */
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background-color: #aebcb9;
-}
-
 .cd-headline.clip b {
   opacity: 0;
 }
 
 .cd-headline.clip b.is-visible {
   opacity: 1;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+#about .top {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  border: 1px solid darkcyan;
+}
+
+#about .top .image {
+  height: 200px;
+  background-image: url("./image/s1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about .bottom {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
 }
 
 /*======== Media Query Start =============*/

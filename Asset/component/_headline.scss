@@ -63,6 +63,7 @@ $L:     1170px;
 span{
 	font-weight: normal;
 	font-size: 18px;
+	color: #00db6a;
 }
 
 .cd-words-wrapper {
@@ -73,7 +74,7 @@ span{
 	b {
 		font-size: 20px;
 		font-weight: bold;
-		color: var(--pink);
+		color: var(--white);
 		display: inline-block;
 		position: absolute;
 		white-space: nowrap;
@@ -104,17 +105,6 @@ xclip
 	.cd-words-wrapper {
 		overflow: hidden;
 		vertical-align: top;
-
-		&::after {
-			/* line */
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 2px;
-			height: 100%;
-			background-color: $color-1;
-		}
 	}
 
 	b {
