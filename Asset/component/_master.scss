@@ -9,6 +9,10 @@ html{
 	overflow-x: hidden;
     scroll-behavior: smooth;
 }
+#bodys{
+    min-height: 100vh;
+    background-color: var(--body-bg);
+}
 a,
 a:hover {
 	text-decoration: none !important;
@@ -19,8 +23,8 @@ ul{
 
 
 section{
+    border: 1px solid greenyellow;
 	padding: 3rem;
-    background-color: var(--blue);
     .section_heading{	
         display: flex;
         align-items: center;

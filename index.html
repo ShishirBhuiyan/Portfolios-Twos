@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <script src="./Asset/js/jquery.js"></script>
     <title>Twos</title>
 </head>
-<body>
+<body id="bodys">
 
 
     <!--========== Hamburger Menu ===========-->
@@ -17,44 +17,53 @@
         <div class="line"></div>
     </div>
     <!--====== Hamurger Menu End ============-->
-
-    <section class="navigation">
-        <div class="container">
-        <div class="navigation-overlay"></div>
-        <div class="containers">
-          <nav>
-            <div class="top">
-              <a href="index.html" class="brand">Shishir Bhuiyan</a>
-            </div>
-            <div class="bottom">
-              <ul>
-                <li class="list">
-                  <span class="span1">Home</span> <span class="span2" id="homespan"><a>Home</a></span>
-                </li>
-                <li class="list">
-                  <span class="span1">About</span> <span class="span2"id="aboutspan"><a>ABOUT</a></span>
-                </li>
-                <li class="list">
-                  <span class="span1">Contact</span> <span class="span2"> <a onclick="togglecontact()">Contact</a> </span>
-                </li>
-                <li class="list">
-                  <span class="span1"> <i class="fas fa-cog fa-spin" style="margin-right: 3px;"></i> Resume </span> <span class="span2 cv"> <a href="./cv/Shishir Bhuiyan.pdf" target="_blank">Download</a> </span>
-                </li>
-                <li class="list">
-                  <div class="switch" id="toggles">
-                    <div class="frame">
-                        <div class="inner">
+    <div class="main">
+      <section class="navigation">
+          <div class="container">
+          <div class="navigation-overlay"></div>
+          <div class="containers">
+            <nav>
+              <div class="top">
+                <a href="index.html" class="brand">Shishir Bhuiyan</a>
+              </div>
+              <div class="bottom">
+                <ul>
+                  <li class="list">
+                    <span class="span1">Home</span> <span class="span2" id="homespan"><a>Home</a></span>
+                  </li>
+                  <li class="list">
+                    <span class="span1">About</span> <span class="span2"id="aboutspan"><a>ABOUT</a></span>
+                  </li>
+                  <li class="list">
+                    <span class="span1">Contact</span> <span class="span2"> <a onclick="togglecontact()">Contact</a> </span>
+                  </li>
+                  <li class="list">
+                    <span class="span1"> <i class="fas fa-cog fa-spin" style="margin-right: 3px;"></i> Resume </span> <span class="span2 cv"> <a href="./cv/Shishir Bhuiyan.pdf" target="_blank">Download</a> </span>
+                  </li>
+                  <li class="list">
+                    <div class="switch" id="toggles">
+                      <div class="frame">
+                          <div class="inner">
+                          </div>
                         </div>
-                      </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>            
-        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>            
+          </div>
 
-    </section>
+      </section>
+
+      <section id="profile">
+          <div class="parent">
+            <div class="child">
+              <div class="image"></div>
+            </div>
+          </div>
+      </section>
+    </div>
     
 
     <script src="./Asset/js/app.js"></script>
