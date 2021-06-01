@@ -9,6 +9,7 @@
     top: 0;
     transform: translateX(-100%);
     transition: transform 650ms;
+    z-index: var(--zindex_low);
     nav{
      height: 60vh;
      display: flex;
@@ -16,8 +17,8 @@
      align-items: center !important;
      justify-content: space-evenly;
      padding-bottom: 22rem;
-     position: relative;
-     z-index: 12;
+      z-index: var(--zindex_low);
+      position: relative;
      .top{
        margin-top: 10px;
       .brand{
@@ -81,6 +82,7 @@
       height: 100%;
       display: block;
       background-color: rgba(0,0,0,0.8);
+      z-index: var(--zindex_none);
     }
   }
   
@@ -90,7 +92,6 @@
   
   @mixin nav-laptop() {
     .navigation{
-      z-index: 12;
       background: none !important;
       background: var(--body-bg) !important;
       height:70px;
