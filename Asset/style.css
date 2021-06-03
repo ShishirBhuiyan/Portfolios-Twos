@@ -179,23 +179,38 @@ ul {
 }
 
 section {
-  padding: 1.5rem;
+  padding: 1.5rem .5rem;
 }
 
-section .section_heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section .section_heading h1 {
-  font-size: 20px;
-  color: var(--white);
-  text-shadow: 0 0 1px var(--blue);
+section .section-title h2 {
+  font-size: 14px;
   font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+section .section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #4ceb95;
+  margin: 4px 10px;
+}
+
+section .section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 
 .container {
@@ -471,15 +486,14 @@ section .section_heading h1 {
 }
 
 #profile {
-  height: 37vh;
+  height: 40vh;
   width: 100%;
   position: relative;
   z-index: var(--zindex_none);
-  border: 1px solid red;
 }
 
 #profile .parent {
-  margin-top: 15px;
+  margin-top: 35px;
   position: relative;
 }
 
@@ -501,7 +515,7 @@ section .section_heading h1 {
 
 #profile .info {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -515,7 +529,6 @@ section .section_heading h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 120px !important;
 }
 
 #profile .info h1 {
@@ -524,7 +537,7 @@ section .section_heading h1 {
 
 .cd-intro {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -612,30 +625,42 @@ xclip
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0;
 }
 
 #about .top {
+  margin: 5px 0px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%;
-  border: 1px solid darkcyan;
 }
 
 #about .top .image {
+  border: 5px solid #353535;
   height: 200px;
-  background-image: url("./image/s1.png");
+  background-image: url("./image/3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 #about .bottom {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%;
+  color: white;
+}
+
+#about .bottom p {
+  margin-bottom: 10px;
+  color: #797979;
 }
 
 /*======== Media Query Start =============*/

@@ -23,15 +23,35 @@ ul{
 
 
 section{
-	padding: 1.5rem;
-    .section_heading{	
-        display: flex;
-        align-items: center;
-        h1{
-            font-size: 20px;
-            color: var(--white);
-            text-shadow: 0 0 1px var(--blue);
+	padding: 1.5rem .5rem;
+    .section-title{
+        h2{
+            font-size: 14px;
             font-weight: 500;
+            padding: 0;
+            line-height: 1px;
+            margin: 0 0 20px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #aaaaaa;
+            font-family: "Poppins", sans-serif;
+            &::after{
+                content: "";
+                width: 120px;
+                height: 1px;
+                display: inline-block;
+                background: #4ceb95;
+                margin: 4px 10px;
+            }
+        }
+        p{
+            margin: 0;
+            margin: -15px 0 15px 0;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            color: #fff;  
         }
     }
 }

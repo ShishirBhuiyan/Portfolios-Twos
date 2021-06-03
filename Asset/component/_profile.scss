@@ -1,11 +1,10 @@
 #profile{
-    height:37vh;
+    height:40vh;
     width: 100%;
     position: relative;
     z-index: var(--zindex_none);
-    border: 1px solid red;
     .parent{
-    margin-top: 15px;
+    margin-top: 35px;
     position: relative;
     .child{
         position: absolute;
@@ -25,7 +24,7 @@
 }
 .info{
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -33,7 +32,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 120px !important;
     h1{
         color: white;
     }
