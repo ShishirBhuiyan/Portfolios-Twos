@@ -41,19 +41,7 @@ $L:     1170px;
     margin: 0 auto;
 	max-width: $M;
 	text-align: center;
-}
-
-.cd-intro {
 	padding: 0 !important;
-	margin: 0 auto;
-
-	@include MQ(M) {
-		margin: 5em auto;
-	}
-
-	@include MQ(L) {
-		margin: 6em auto;
-	}
 }
 
 .cd-headline {
@@ -118,3 +106,9 @@ xclip
 	}
 }
 
+
+@mixin lg-geadline {
+	.cd-intro {
+		bottom: 5px;
+	}
+}

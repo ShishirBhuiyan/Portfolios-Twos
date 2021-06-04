@@ -1,9 +1,9 @@
 @import'./component/variable';
 @import './component/master';
 @import './component/hamburger';
+@import './component/curb';
 @import './component/nav';
 @import './component/profile';
-@import './component/headline';
 
 
 
@@ -13,21 +13,30 @@
 
 /*======== Media Query Start =============*/
 @media screen and(min-width:576px){// --breakpoint-sm
-
-
+   @include sm_container();
+   @include sm-nav();
 }
 
 @media screen and(min-width: 768px){ // --breakpoint-md
+    @include md_container();
     @include md-hamburger();
+    @include md-nav();
+    @include md-about();
 }
 
 @media screen and(min-width: 992px){ //  --breakpoint-lg
+    @include lg_container();
     @include lg-hamburger();
+    @include lg-nav();
+    @include lg-profile();
+    @include lg-about();
 
 }
 
 @media screen and(min-width: 1200px){ //  --breakpoint-xl
+    @include xl_container();
     @include xl-hamburger();
+    @include xl-nav();
 
 }
 /*======== Media Query End =============*/

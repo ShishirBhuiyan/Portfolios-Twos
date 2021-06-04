@@ -1,8 +1,12 @@
+
+@import './headline';
+
 #profile{
     height:40vh;
     width: 100%;
     position: relative;
     z-index: var(--zindex_none);
+    //border: 1px solid red;
     .parent{
     margin-top: 35px;
     position: relative;
@@ -17,23 +21,40 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("./image/s1.png");
+        background-image: url("https://i.postimg.cc/1tJy5QzK/Shishir.png");
         border-radius: 50%;
-        border: 5px solid rgb(53, 53, 53);
+        border: 5px solid #00602e;
+    }
+     }
+    .info{
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: var(--white);
+        }
     }
 }
-.info{
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1{
-        color: white;
+
+@mixin lg-profile {
+    #profile{
+        height:48vh;
+        .parent{
+            .child{
+                top: 20px;
+                height: 200px;
+                width: 200px;
+            }
+        }
+        .info{
+            bottom: 35px;
+        }
     }
-}
+    @include lg-geadline();
 }

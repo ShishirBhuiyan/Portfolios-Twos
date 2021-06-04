@@ -1,18 +1,28 @@
 #about{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    //border: 1px solid red;
     .top{
+        display: flex;
+        flex-direction: column;
         margin: 5px 0px;
         order: 2;
         flex: 0 0 100%;
         max-width: 100%;
         .image{
             border: 5px solid rgb(53, 53, 53);
-            height: 200px;
+            height: 250px;
             background-image: url("https://i.postimg.cc/DzbqYCMd/3.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
+        }
+        .more{
+            p{
+                margin: 10px 0;
+                color: var(--gray);  
+            }
         }
 
     }
@@ -20,10 +30,44 @@
         order: 1;
         flex: 0 0 100%;
         max-width: 100%;
-        color: white;
-        p{
-            margin-bottom: 10px;
-            color: #797979;
+        color: var(--white);
+        .info{
+            
+        span{
+            color: var(--heading_after);
+         }
+         p{
+             margin-bottom: 10px;
+             color: var(--gray); 
+         }
+        }
+    }
+}
+
+@mixin  md-about {
+    #about{
+        .top{
+            .image{
+               height: 300px;
+            }
+        }
+    }
+}
+
+@mixin  lg-about {
+    #about{
+        .top{
+            flex-direction: row;
+            .image{
+               height: 250px;
+               flex: 0 0 50%;
+               max-width: 50%;
+            }
+            .more{
+                padding-left: 20px;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
         }
     }
 }
