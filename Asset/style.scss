@@ -1,14 +1,15 @@
 @import'./component/variable';
 @import './component/master';
-@import './component/hamburger';
 @import './component/curb';
+@import './component/hamburger';
 @import './component/nav';
 @import './component/profile';
-
-
-
-
 @import './component/about';
+@import './component/contact';
+
+
+
+
 
 
 /*======== Media Query Start =============*/
@@ -30,6 +31,7 @@
     @include lg-nav();
     @include lg-profile();
     @include lg-about();
+    @include lg-contact();
 
 }
 

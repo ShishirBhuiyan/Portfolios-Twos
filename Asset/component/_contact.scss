@@ -1,0 +1,67 @@
+#contact{
+        .address{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+           .card{
+               flex: 0 0 100%;
+               max-width: 100%;
+               padding: 10px 10px 10px 0;
+            .info-box {
+                padding: 20px;
+                color: var(--dark-gray);
+                width: 100%;
+                background: var(--dark-gray);
+                i.indicate{
+                    font-size: 24px;
+                    color: var(--green);
+                    border-radius: 50%;
+                    padding: 14px;
+                    float: left;
+                    background: var(--black);
+                }
+                h3{
+                    font-size: 20px;
+                    color: var(--gray);
+                    font-weight: 700;
+                    margin: 10px 0 8px 68px;  
+                }
+                p{
+                    padding: 0;
+                    color: var(--white);
+                    line-height: 24px;
+                    font-size: 14px;
+                    margin: 0 0 0 68px;
+                }
+                .social-links {
+                    margin: 5px 0 0 68px;
+                    display: flex;
+                    a{
+                        font-size: 18px;
+                        display: inline-block;
+                        color: var(--white);
+                        line-height: 1;
+                        margin-right: 12px;
+                        transition: 0.3s;
+                        &:hover{
+                            color: var(--green);
+                        }
+                    }
+                }
+            }
+           }
+        }
+}
+
+@mixin lg-contact {
+    #contact{
+        .address{
+            flex-direction: row;
+            flex-wrap: wrap;
+            .card{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}

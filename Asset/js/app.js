@@ -4,6 +4,11 @@ $(document).ready(function() {
         $(".menu .line").toggleClass("active");
         $(".navigation").toggleClass("open");
     });
+    //<=========== Menu Click =============>
+    $(".list").click(function() {
+        $(".menu .line").toggleClass("active");
+        $(".navigation").toggleClass("open");
+    });
 
 
     
