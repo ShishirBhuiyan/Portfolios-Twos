@@ -3,29 +3,50 @@
     --zindex_mid:2;
     --zindex_low:1;
     --zindex_none:0;
+    --white:#ffffff;
+    --black:#000000;
+    --red:rgb(170, 0, 0);
+    --light-green:#02be5c;
+    --dark-green:#008842;
+    --gray:rgb(165, 165, 165);
+    --dark-gray:#232323;
 }
 
 html {
-    --body-bg: rgb(0, 0, 0);
-    --white: rgb(255, 255, 255);
-    --red:rgb(170, 0, 0);
-    --black:black;
-    --green: #02be5c;
-    --gray:rgb(165, 165, 165);
-    --curb:#008842;
-    --heading_after:#02be5c;
-    --dark-gray:#232323;
+    --body-bg:var(--black);
+    --hamburger-bg: var(--black);
+    --contact-info-bg: var(--dark-gray);
+    --name: var(--white);
+    --animation-headline: var(--dark-green);
+    --headline-span:var(--white);
+    --profile-border: var(--dark-green);
+    --section-heading: var(--gray);
+    --section-heading-p: var(--white);
+    --section-heading-after:var(--dark-green);
+    --about-bottom-span:var(--dark-green);
+    --about-text:var(--gray);
+    --cotact-icon: var(--black);
+    --cotact-icon-bg: var(--dark-green);
+    --contact-h3: var(--gray);
+    --social-icon:var(--white);
 }
   
 html[data-theme='light'] {
-    --body-bg: rgb(255, 255, 255);
-    --white: rgb(0, 0, 0);
-    --red:rgb(170, 0, 0);
-    --black:black;
-    --green: #02be5c;
-    --gray:rgb(0, 0, 0);
-    --curb:#000000;
-    --heading_after:#000000;
+    --body-bg:var(--white);
+    --name: var(--black);
+    --contact-info-bg: var(--gray);
+    --animation-headline: var(--black);
+    --headline-span:var(--black);
+    --profile-border: var(--black);
+    --section-heading: var(--black);
+    --section-heading-p: var(--black);
+    --section-heading-after:var(--black);
+    --about-bottom-span:var(--black);
+    --about-text:var(--black);
+    --cotact-icon: var(--white);
+    --cotact-icon-bg: var(--black);
+    --contact-h3: var(--black);
+    --social-icon:var(--black);
 }
 
   

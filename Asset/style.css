@@ -3,29 +3,50 @@
   --zindex_mid:2;
   --zindex_low:1;
   --zindex_none:0;
-}
-
-html {
-  --body-bg: rgb(0, 0, 0);
-  --white: rgb(255, 255, 255);
+  --white:#ffffff;
+  --black:#000000;
   --red:rgb(170, 0, 0);
-  --black:black;
-  --green: #02be5c;
+  --light-green:#02be5c;
+  --dark-green:#008842;
   --gray:rgb(165, 165, 165);
-  --curb:#008842;
-  --heading_after:#02be5c;
   --dark-gray:#232323;
 }
 
+html {
+  --body-bg:var(--black);
+  --hamburger-bg: var(--black);
+  --contact-info-bg: var(--dark-gray);
+  --name: var(--white);
+  --animation-headline: var(--dark-green);
+  --headline-span:var(--white);
+  --profile-border: var(--dark-green);
+  --section-heading: var(--gray);
+  --section-heading-p: var(--white);
+  --section-heading-after:var(--dark-green);
+  --about-bottom-span:var(--dark-green);
+  --about-text:var(--gray);
+  --cotact-icon: var(--black);
+  --cotact-icon-bg: var(--dark-green);
+  --contact-h3: var(--gray);
+  --social-icon:var(--white);
+}
+
 html[data-theme='light'] {
-  --body-bg: rgb(255, 255, 255);
-  --white: rgb(0, 0, 0);
-  --red:rgb(170, 0, 0);
-  --black:black;
-  --green: #02be5c;
-  --gray:rgb(0, 0, 0);
-  --curb:#000000;
-  --heading_after:#000000;
+  --body-bg:var(--white);
+  --name: var(--black);
+  --contact-info-bg: var(--gray);
+  --animation-headline: var(--black);
+  --headline-span:var(--black);
+  --profile-border: var(--black);
+  --section-heading: var(--black);
+  --section-heading-p: var(--black);
+  --section-heading-after:var(--black);
+  --about-bottom-span:var(--black);
+  --about-text:var(--black);
+  --cotact-icon: var(--white);
+  --cotact-icon-bg: var(--black);
+  --contact-h3: var(--black);
+  --social-icon:var(--black);
 }
 
 * {
@@ -67,7 +88,7 @@ section .section-title h2 {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--gray);
+  color: var(--section-heading);
   font-family: "Poppins", sans-serif;
 }
 
@@ -76,7 +97,7 @@ section .section-title h2::after {
   width: 50px;
   height: 2px;
   display: inline-block;
-  background: var(--heading_after);
+  background: var(--section-heading-after);
   margin: 4px 5px;
 }
 
@@ -87,7 +108,7 @@ section .section-title p {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: var(--section-heading-p);
 }
 
 .container {
@@ -128,7 +149,7 @@ section .section-title p {
   position: fixed;
   top: 3%;
   right: 10%;
-  background-color: var(--black);
+  background-color: var(--hamburger-bg);
   z-index: var(--zindex_top);
   border-radius: 3px;
   cursor: pointer;
@@ -377,27 +398,21 @@ section .section-title p {
   padding: 0 !important;
 }
 
-.cd-headline {
-  color: white !important;
+.cd-intro .cd-headline {
+  color: var(--white);
   line-height: 1.2;
 }
 
-span {
+.cd-intro .cd-headline span {
   font-weight: normal;
   font-size: 18px;
-  color: #00db6a;
+  color: var(--headline-span);
 }
 
-.cd-words-wrapper {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-}
-
-.cd-words-wrapper b {
+.cd-intro .cd-headline span b {
   font-size: 20px;
   font-weight: bold;
-  color: var(--white);
+  color: var(--animation-headline);
   display: inline-block;
   position: absolute;
   white-space: nowrap;
@@ -405,8 +420,14 @@ span {
   top: 0;
 }
 
-.cd-words-wrapper b.is-visible {
+.cd-intro .cd-headline span b.is-visible {
   position: relative;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
 }
 
 /* -------------------------------- 
@@ -457,7 +478,7 @@ xclip
   background-position: center;
   background-image: url("https://i.postimg.cc/1tJy5QzK/Shishir.png");
   border-radius: 50%;
-  border: 5px solid #00602e;
+  border: 5px solid var(--profile-border);
 }
 
 #profile .info {
@@ -479,7 +500,7 @@ xclip
 }
 
 #profile .info h1 {
-  color: var(--white);
+  color: var(--name);
 }
 
 #about {
@@ -522,7 +543,7 @@ xclip
 
 #about .top .more p {
   margin: 10px 0;
-  color: var(--gray);
+  color: var(--about-text);
 }
 
 #about .bottom {
@@ -537,12 +558,12 @@ xclip
 }
 
 #about .bottom .info span {
-  color: var(--heading_after);
+  color: var(--about-bottom-span);
 }
 
 #about .bottom .info p {
   margin-bottom: 10px;
-  color: var(--gray);
+  color: var(--about-text);
 }
 
 #contact .address {
@@ -566,30 +587,29 @@ xclip
 
 #contact .address .card .info-box {
   padding: 20px;
-  color: var(--dark-gray);
   width: 100%;
-  background: var(--dark-gray);
+  background: var(--contact-info-bg);
 }
 
 #contact .address .card .info-box i.indicate {
   font-size: 24px;
-  color: var(--green);
+  color: var(--cotact-icon);
   border-radius: 50%;
   padding: 14px;
   float: left;
-  background: var(--black);
+  background: var(--cotact-icon-bg);
 }
 
 #contact .address .card .info-box h3 {
   font-size: 20px;
-  color: var(--gray);
+  color: var(--contact-h3);
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
 
 #contact .address .card .info-box p {
   padding: 0;
-  color: var(--white);
+  color: var(--contact-h3);
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
@@ -605,7 +625,7 @@ xclip
 #contact .address .card .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: var(--white);
+  color: var(--social-icon);
   line-height: 1;
   margin-right: 12px;
   -webkit-transition: 0.3s;
@@ -613,7 +633,7 @@ xclip
 }
 
 #contact .address .card .info-box .social-links a:hover {
-  color: var(--green);
+  color: var(--dark-green);
 }
 
 /*======== Media Query Start =============*/

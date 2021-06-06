@@ -1,8 +1,4 @@
 
-$color-1: #aebcb9; // Tower Gray
-$color-2: #0096a7; // Bondi Blue
-$color-3: #0d0d0d; // Cod Gray
-
 // fonts 
 
 $primary-font: 'Source Sans Pro', sans-serif;
@@ -42,17 +38,31 @@ $L:     1170px;
 	max-width: $M;
 	text-align: center;
 	padding: 0 !important;
+	.cd-headline {
+		color: var(--white);
+		line-height: 1.2;
+		span{
+			font-weight: normal;
+			font-size: 18px;
+			color: var(--headline-span);
+			b {
+				font-size: 20px;
+				font-weight: bold;
+				color: var(--animation-headline);
+				display: inline-block;
+				position: absolute;
+				white-space: nowrap;
+				left: 0;
+				top: 0;
+		
+				&.is-visible {
+					position: relative;
+				}
+			}
+		}
+	}
 }
 
-.cd-headline {
-	color: white !important;
-	line-height: 1.2;
-}
-span{
-	font-weight: normal;
-	font-size: 18px;
-	color: #00db6a;
-}
 
 
 
@@ -60,22 +70,6 @@ span{
 	display: inline-block;
 	position: relative;
 	text-align: left;
-
-	b {
-		font-size: 20px;
-		font-weight: bold;
-		color: var(--white);
-		display: inline-block;
-		position: absolute;
-		white-space: nowrap;
-		left: 0;
-		top: 0;
-
-		&.is-visible {
-			position: relative;
-		}
-	}
-
 }
 
 

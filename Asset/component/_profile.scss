@@ -23,7 +23,7 @@
         background-position: center;
         background-image: url("https://i.postimg.cc/1tJy5QzK/Shishir.png");
         border-radius: 50%;
-        border: 5px solid #00602e;
+        border: 5px solid var(--profile-border);
     }
      }
     .info{
@@ -37,7 +37,7 @@
         align-items: center;
         justify-content: center;
         h1{
-            color: var(--white);
+            color: var(--name);
         }
     }
 }

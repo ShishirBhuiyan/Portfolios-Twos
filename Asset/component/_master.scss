@@ -33,14 +33,14 @@ section{
             margin: 0 0 20px 0;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: var(--gray); 
+            color: var(--section-heading); 
             font-family: "Poppins", sans-serif;
             &::after{
                 content: "";
                 width: 50px;
                 height: 2px;
                 display: inline-block;
-                background: var(--heading_after);
+                background: var(--section-heading-after);
                 margin: 4px 5px;
             }
         }
@@ -51,7 +51,7 @@ section{
             font-weight: 700;
             text-transform: uppercase;
             font-family: "Poppins", sans-serif;
-            color: #fff;  
+            color: var(--section-heading-p);  
         }
     }
 }

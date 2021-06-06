@@ -21,7 +21,7 @@
         .more{
             p{
                 margin: 10px 0;
-                color: var(--gray);  
+                color: var(--about-text);  
             }
         }
 
@@ -34,11 +34,11 @@
         .info{
             
         span{
-            color: var(--heading_after);
+            color: var(--about-bottom-span);
          }
          p{
              margin-bottom: 10px;
-             color: var(--gray); 
+             color: var(--about-text); 
          }
         }
     }
