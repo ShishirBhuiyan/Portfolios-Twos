@@ -48,6 +48,7 @@ html[data-theme='light'] {
   --cotact-icon-bg: var(--black);
   --contact-h3: var(--black);
   --social-icon:var(--black);
+  --curb:var(--black);
 }
 
 * {
