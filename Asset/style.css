@@ -29,6 +29,7 @@ html {
   --cotact-icon-bg: var(--dark-green);
   --contact-h3: var(--gray);
   --social-icon:var(--white);
+  --curb:var(--dark-green);
 }
 
 html[data-theme='light'] {
